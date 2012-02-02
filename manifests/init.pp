@@ -1,4 +1,33 @@
+# Foobar class
+#
+# == Parameters
+#
+# === General Tunables
+# 
+# [*param1*]
+#   *Optional* this is the first parameter
+#
+# === Advanced Tunables
+#
+# These are generally automatically set, do not change unless you know what you
+# doing.
+#
+# [*packages*]
+#   *Optional* Packages to install
+# [*services*]
+#   *Optional* Services to start
+# [*config_path*]
+#   *Optional* Configuration file path
+# [*config_dir*]
+#   *Optional* Configuration directory for vhosts.
+#
+# == Examples
+#
+# TODO
+#
 class foobar (
+
+  $param1      = $foobar::params::param1,
 
   $packages    = $foobar::params::packages,
   $services    = $foobar::params::services,
