@@ -1,5 +1,5 @@
 class foobar::packages {
-  package { "foobar":
+  package { $foobar::packages:
     ensure => installed,
   }
 }

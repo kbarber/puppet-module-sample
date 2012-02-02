@@ -1,6 +1,10 @@
 class foobar (
-  $param1 = $foobar::params::param1,
-  $param2 = $foobar::params::param2
+
+  $packages    = $foobar::params::packages,
+  $services    = $foobar::params::services,
+  $config_path = $foobar::params::config_path,
+  $config_dir  = $foobar::params::config_dir
+
 ) inherits foobar::params {
 
   anchor { "foobar::start":   }~>

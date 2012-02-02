@@ -1,5 +1,5 @@
 class foobar::config {
-  file { "/etc/foobar/foobar.conf":
+  file { $foobar::config_path:
     content => template("${module_name}/foobar.conf"),
   }
 }

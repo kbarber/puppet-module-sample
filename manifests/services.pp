@@ -1,5 +1,5 @@
 class foobar::services {
-  service { "foobar":
+  service { $foobar::services:
     ensure => running,
     enable => true,
   }
